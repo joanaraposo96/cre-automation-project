@@ -53,8 +53,8 @@ export class Register {
             this.confirmPassword
         ];
 
-        for (this.field of fields) {
-            expect(this.field).toHaveValue('');
+        for (const field of fields) {
+            await expect(field).toHaveValue('');
         }
     }
 

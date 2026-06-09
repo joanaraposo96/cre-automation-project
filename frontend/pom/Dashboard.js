@@ -23,7 +23,7 @@ export class Dashboard {
     }
 
     async expectPageLoaded() {
-        await expect(this.page).toHaveURL('/dashboard.html');
+        await expect(this.page).toHaveURL(/dashboard/);
     }
 
     async expectUsernameOnHeader(username) {

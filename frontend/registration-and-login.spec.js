@@ -100,5 +100,4 @@ test.describe('Login', () => {
         
         await login.expectPageLoaded();
     });
-    
 });
