@@ -6,8 +6,8 @@ This project contains automated tests of both backend (API) and frontend (UI) of
 
 ## 🚀 Tech Stack 
 - JavaScript (Node.js)
-- Playwright – End-to-end and API testing
-- Faker.js – Fake data generation
+- Playwright (End-to-end and API testing)
+- Faker.js (Fake data generation)
 
 
 ## 📦 Setup & Installation
