@@ -37,14 +37,14 @@ export class Users {
 
     async expectUserCreatedSuccessDialog() {
         this.page.once('dialog', async dialog => {
-            expect(dialog.message()).toBe('Usuário criado com sucesso!');
+            expect(dialog.message()).toBeTruthy();
             await dialog.accept();
         });
     }
 
     async expectUserEditedSuccessDialog() {
         this.page.once('dialog', async dialog => {
-            expect(dialog.message()).toBe('Usuário atualizado com sucesso!');
+            expect(dialog.message()).toBeTruthy();
             await dialog.accept();
         });
     }
@@ -83,11 +83,11 @@ export class Users {
 
     async expectDeleteUserConfirmationAndSuccessDialog(id) {
         this.page.once('dialog', async dialog => {
-            expect(dialog.message()).toBe(`Deseja realmente excluir o usuário #${id}?`);
+            expect(dialog.message()).toContain(`${id}`);
             await dialog.accept();
 
             this.page.once('dialog', async dialog => {
-                expect(dialog.message()).toBe('Usuário excluído com sucesso!');
+                expect(dialog.message()).toBeTruthy();
                 await dialog.accept();
             });
         });

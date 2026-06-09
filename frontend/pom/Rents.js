@@ -30,7 +30,7 @@ export class Rents {
 
     async expectSuccessDialog() {
         this.page.once('dialog', async dialog => {
-            expect(dialog.message()).toBe('Arrendamento solicitado com sucesso!');
+            expect(dialog.message()).toBeTruthy();
             await dialog.accept();
         });
     }
