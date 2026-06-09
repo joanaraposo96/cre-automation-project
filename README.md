@@ -13,8 +13,8 @@ This project contains automated tests of both backend (API) and frontend (UI) of
 ## 📦 Setup & Installation
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/joanaraposo96/books-crud-backend-and-frontend-automation-project.git
-cd books-crud-backend-and-frontend-automation-project
+git clone https://github.com/joanaraposo96/cre-automation-project.git
+cd cre-automation-project
 ```
 
 2. **Initialize Node.js project**
@@ -33,8 +33,9 @@ npx playwright install
 npm install @faker-js/faker
 ```
 
-## ▶️ Running tests (UI mode)
+## ▶️ Running tests (Default or UI mode)
 ```
+npx playwright test
 npx playwright test --ui
 ```
 
