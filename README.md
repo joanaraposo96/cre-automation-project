@@ -139,4 +139,4 @@ npx playwright test --ui
 
 ## 🏆 Credits
 
-This backend automation project is based on the original API system built by **Bruno Figueiredo** 👉 [CRUD Livros Expandido](https://github.com/brunonf15/crud-livros-expandido).
+This backend and frontend automation project is based on the original API and UI system developed by **Bruno Figueiredo** 👉 [CRUD Livros Expandido](https://github.com/brunonf15/crud-livros-expandido).
