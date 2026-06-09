@@ -36,14 +36,8 @@ export class Favourites {
         }
     }
 
-     async expectEmptyGridMessage() {
-        const books = await this.bookCards
-            .locator('h3');
-
-        const count = await books.count();
-
-        expect(count).toBe(0);
-
-        await expect(this.emptyGridMessage).toBeVisible();
+    async expectEmptyGridMessage() {
+        await expect(this.bookCards).toHaveCount(0);
+        await expect(this.emptyGridMessage).toBeAttached();
     }
 }

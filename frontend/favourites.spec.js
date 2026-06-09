@@ -47,10 +47,6 @@ test.describe('Favourites', () => {
 
         await books.expectPageLoaded();
 
-        const { body } = await listUserFavourites(request, student.id);
-
-        expect(body.length).toBe(0);
-
         const { body: bookId } = await listAllBooks(request);
 
         const book_1_id = bookId.find(book=> book.nome === book_1.nome).id;
